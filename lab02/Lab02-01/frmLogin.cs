@@ -35,9 +35,19 @@ namespace Lab02_01
 
         private void btnIniciar_Click(object sender, EventArgs e)
         {
-            PrincipalMDI principal = new PrincipalMDI();
-            principal.Show();
-            this.Hide();
+            string [] credentials = new string[2] {"usuario","password" };
+
+            if (credentials[0] == txtUsuario.Text && credentials[1] == txtPassword.Text) 
+            {
+                PrincipalMDI principal = new PrincipalMDI();
+                principal.Show();
+                this.Hide();
+            }
+            else 
+            {
+                lblErrorCredential.Visible = true;
+            }
+            
         }
     }
 }

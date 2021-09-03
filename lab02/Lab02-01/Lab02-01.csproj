@@ -73,6 +73,30 @@
     <Compile Include="EjemploMDI.Designer.cs">
       <DependentUpon>EjemploMDI.cs</DependentUpon>
     </Compile>
+    <Compile Include="manCategorias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="manCategorias.Designer.cs">
+      <DependentUpon>manCategorias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="manClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="manClientes.Designer.cs">
+      <DependentUpon>manClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="manProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="manProductos.Designer.cs">
+      <DependentUpon>manProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="manProveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="manProveedores.Designer.cs">
+      <DependentUpon>manProveedores.cs</DependentUpon>
+    </Compile>
     <Compile Include="manUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,11 +111,29 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="regVentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="regVentas.Designer.cs">
+      <DependentUpon>regVentas.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EjemploMDI.resx">
       <DependentUpon>EjemploMDI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="manCategorias.resx">
+      <DependentUpon>manCategorias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="manClientes.resx">
+      <DependentUpon>manClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="manProductos.resx">
+      <DependentUpon>manProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="manProveedores.resx">
+      <DependentUpon>manProveedores.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="manUsuario.resx">
       <DependentUpon>manUsuario.cs</DependentUpon>
@@ -108,6 +150,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="regVentas.resx">
+      <DependentUpon>regVentas.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

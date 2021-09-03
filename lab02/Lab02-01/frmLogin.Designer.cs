@@ -38,6 +38,7 @@ namespace Lab02_01
             this.label2 = new System.Windows.Forms.Label();
             this.txtPassword = new System.Windows.Forms.MaskedTextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.lblErrorCredential = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -48,6 +49,7 @@ namespace Lab02_01
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.panel1.Controls.Add(this.lblErrorCredential);
             this.panel1.Controls.Add(this.txtUsuario);
             this.panel1.Controls.Add(this.btnCancelar);
             this.panel1.Controls.Add(this.btnIniciar);
@@ -135,6 +137,18 @@ namespace Lab02_01
             this.label1.Text = "Inicio de sesión";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
+            // lblErrorCredential
+            // 
+            this.lblErrorCredential.AutoSize = true;
+            this.lblErrorCredential.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblErrorCredential.ForeColor = System.Drawing.Color.Red;
+            this.lblErrorCredential.Location = new System.Drawing.Point(34, 223);
+            this.lblErrorCredential.Name = "lblErrorCredential";
+            this.lblErrorCredential.Size = new System.Drawing.Size(210, 19);
+            this.lblErrorCredential.TabIndex = 8;
+            this.lblErrorCredential.Text = "Contraseña o usuario Incorrecto";
+            this.lblErrorCredential.Visible = false;
+            // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -165,6 +179,7 @@ namespace Lab02_01
         private System.Windows.Forms.MaskedTextBox txtPassword;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtUsuario;
+        private System.Windows.Forms.Label lblErrorCredential;
     }
 }
 
