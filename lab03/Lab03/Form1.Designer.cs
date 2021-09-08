@@ -61,7 +61,6 @@ namespace Lab03
             this.txtServidor.Name = "txtServidor";
             this.txtServidor.Size = new System.Drawing.Size(200, 30);
             this.txtServidor.TabIndex = 1;
-            this.txtServidor.Text = "DESKTOP-M0H5GAK";
             // 
             // label2
             // 
