@@ -61,26 +61,6 @@ namespace Lab03
                 dt.Load(reader);
                 dgvTableCursos.DataSource = dt;
                 dgvTableCursos.Refresh();
-                /*
-                 String FirstName = txtNombre.Text;
-                SqlCommand cmd = new SqlCommand();
-                cmd.CommandText = "BuscarPersonaNombre";
-                cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Connection = conn;
-
-                SqlParameter param = new SqlParameter();
-                param.ParameterName = "@firsName";
-                param.SqlDbType = SqlDbType.NVarChar;
-                param.Value = FirstName;
-
-                cmd.Parameters.Add(param);
-
-                SqlDataReader reader = cmd.ExecuteReader();
-                DataTable dt = new DataTable();
-                dt.Load(reader);
-                dgvListado.DataSource = dt;
-                dgvListado.Refresh();
-                 */
             }
             else 
             {
