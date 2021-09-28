@@ -1,5 +1,5 @@
 ﻿
-namespace Lab05
+namespace Lab06
 {
     partial class ManPerson
     {
@@ -46,6 +46,9 @@ namespace Lab05
             this.btnModificar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.dgvListado = new System.Windows.Forms.DataGridView();
+            this.btnOrLastName = new System.Windows.Forms.Button();
+            this.btnBcCodigo = new System.Windows.Forms.Button();
+            this.btnNuevo = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvListado)).BeginInit();
             this.SuspendLayout();
@@ -62,7 +65,7 @@ namespace Lab05
             this.groupBox1.Controls.Add(this.txtFirstName);
             this.groupBox1.Controls.Add(this.txtLastName);
             this.groupBox1.Controls.Add(this.txtPersonId);
-            this.groupBox1.Location = new System.Drawing.Point(15, 17);
+            this.groupBox1.Location = new System.Drawing.Point(14, 55);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(419, 202);
             this.groupBox1.TabIndex = 0;
@@ -74,6 +77,7 @@ namespace Lab05
             this.txtEnrollmentDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.txtEnrollmentDate.Location = new System.Drawing.Point(223, 161);
             this.txtEnrollmentDate.Name = "txtEnrollmentDate";
+            this.txtEnrollmentDate.ShowCheckBox = true;
             this.txtEnrollmentDate.Size = new System.Drawing.Size(150, 22);
             this.txtEnrollmentDate.TabIndex = 12;
             // 
@@ -82,6 +86,7 @@ namespace Lab05
             this.txtHireDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.txtHireDate.Location = new System.Drawing.Point(38, 161);
             this.txtHireDate.Name = "txtHireDate";
+            this.txtHireDate.ShowCheckBox = true;
             this.txtHireDate.Size = new System.Drawing.Size(150, 22);
             this.txtHireDate.TabIndex = 11;
             // 
@@ -164,7 +169,7 @@ namespace Lab05
             this.btnListar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btnListar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnListar.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnListar.Location = new System.Drawing.Point(450, 31);
+            this.btnListar.Location = new System.Drawing.Point(449, 86);
             this.btnListar.Name = "btnListar";
             this.btnListar.Size = new System.Drawing.Size(100, 30);
             this.btnListar.TabIndex = 5;
@@ -177,7 +182,7 @@ namespace Lab05
             this.btnBuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBuscar.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscar.Location = new System.Drawing.Point(450, 67);
+            this.btnBuscar.Location = new System.Drawing.Point(449, 122);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(100, 30);
             this.btnBuscar.TabIndex = 6;
@@ -190,7 +195,7 @@ namespace Lab05
             this.btnInsertar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btnInsertar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInsertar.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInsertar.Location = new System.Drawing.Point(450, 103);
+            this.btnInsertar.Location = new System.Drawing.Point(449, 158);
             this.btnInsertar.Name = "btnInsertar";
             this.btnInsertar.Size = new System.Drawing.Size(100, 30);
             this.btnInsertar.TabIndex = 7;
@@ -203,7 +208,7 @@ namespace Lab05
             this.btnModificar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btnModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnModificar.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnModificar.Location = new System.Drawing.Point(450, 139);
+            this.btnModificar.Location = new System.Drawing.Point(449, 194);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(100, 30);
             this.btnModificar.TabIndex = 8;
@@ -216,7 +221,7 @@ namespace Lab05
             this.btnEliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEliminar.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminar.Location = new System.Drawing.Point(450, 175);
+            this.btnEliminar.Location = new System.Drawing.Point(449, 230);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(100, 30);
             this.btnEliminar.TabIndex = 9;
@@ -227,7 +232,7 @@ namespace Lab05
             // dgvListado
             // 
             this.dgvListado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvListado.Location = new System.Drawing.Point(15, 236);
+            this.dgvListado.Location = new System.Drawing.Point(14, 274);
             this.dgvListado.Name = "dgvListado";
             this.dgvListado.ReadOnly = true;
             this.dgvListado.RowHeadersVisible = false;
@@ -239,11 +244,51 @@ namespace Lab05
             this.dgvListado.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvListado_CellContentClick);
             this.dgvListado.SelectionChanged += new System.EventHandler(this.dgvListado_SelectionChanged);
             // 
+            // btnOrLastName
+            // 
+            this.btnOrLastName.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnOrLastName.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOrLastName.Location = new System.Drawing.Point(52, 12);
+            this.btnOrLastName.Name = "btnOrLastName";
+            this.btnOrLastName.Size = new System.Drawing.Size(173, 35);
+            this.btnOrLastName.TabIndex = 11;
+            this.btnOrLastName.Text = "Ordenar por Apellido";
+            this.btnOrLastName.UseVisualStyleBackColor = true;
+            this.btnOrLastName.Click += new System.EventHandler(this.btnOrLastName_Click);
+            // 
+            // btnBcCodigo
+            // 
+            this.btnBcCodigo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBcCodigo.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBcCodigo.Location = new System.Drawing.Point(237, 12);
+            this.btnBcCodigo.Name = "btnBcCodigo";
+            this.btnBcCodigo.Size = new System.Drawing.Size(173, 35);
+            this.btnBcCodigo.TabIndex = 12;
+            this.btnBcCodigo.Text = "Buscar por Codigo";
+            this.btnBcCodigo.UseVisualStyleBackColor = true;
+            this.btnBcCodigo.Click += new System.EventHandler(this.btnBcCodigo_Click);
+            // 
+            // btnNuevo
+            // 
+            this.btnNuevo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnNuevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNuevo.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNuevo.Location = new System.Drawing.Point(449, 50);
+            this.btnNuevo.Name = "btnNuevo";
+            this.btnNuevo.Size = new System.Drawing.Size(100, 30);
+            this.btnNuevo.TabIndex = 13;
+            this.btnNuevo.Text = "Nuevo";
+            this.btnNuevo.UseVisualStyleBackColor = false;
+            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
+            // 
             // ManPerson
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(562, 503);
+            this.ClientSize = new System.Drawing.Size(562, 553);
+            this.Controls.Add(this.btnNuevo);
+            this.Controls.Add(this.btnBcCodigo);
+            this.Controls.Add(this.btnOrLastName);
             this.Controls.Add(this.dgvListado);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnModificar);
@@ -280,6 +325,9 @@ namespace Lab05
         private System.Windows.Forms.Button btnModificar;
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.DataGridView dgvListado;
+        private System.Windows.Forms.Button btnOrLastName;
+        private System.Windows.Forms.Button btnBcCodigo;
+        private System.Windows.Forms.Button btnNuevo;
     }
 }
 
