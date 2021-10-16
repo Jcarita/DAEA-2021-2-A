@@ -20,5 +20,15 @@ namespace Negocio
         {
             return daoPerson.GetByValue(name);
         }
+        public bool savePerson
+            (String firstName, String lastName, 
+            String hireDate, String enrollmentDate)
+        {
+            bool person = daoPerson.newPerson(firstName, lastName, hireDate, enrollmentDate);
+            if (person)
+                return true;
+            else
+                return false;
+        }
     }
 }

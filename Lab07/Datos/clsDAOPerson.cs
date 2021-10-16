@@ -41,5 +41,22 @@ namespace Datos
             con.Close();
             return dt;
         }
+        public bool newPerson(String firstName, String lastName, String hireDate,String enrollmentDate)
+        {
+            con.Open();
+            SqlCommand cmd = new SqlCommand("InsertPerson",con);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@FirstName", firstName);
+            cmd.Parameters.AddWithValue("@LastName", lastName);
+            cmd.Parameters.AddWithValue("@HireDate", hireDate);
+            cmd.Parameters.AddWithValue("@EnrollmentDate", enrollmentDate);
+            int res = cmd.ExecuteNonQuery();
+            if (res > 0)
+                return true;
+            else
+                return false;
+            
+            con.Close();
+        }
     }
 }
