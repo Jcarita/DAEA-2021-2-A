@@ -10,14 +10,14 @@ namespace lab10
     class Program
     {
         public static NorthwndDataContext context = new NorthwndDataContext();
-        static void Main(string[] args)
+        static void Main(string[] args) 
         {
 
             additionalActivity02();
 
             Console.ReadKey();
         }
-        public static void exerciseI()
+        public static void exercise_I()
         {
             //creacion de la consulta
             var query = from p in context.Products
@@ -29,7 +29,7 @@ namespace lab10
                 Console.WriteLine("ID={0} \t Name={1}", prod.ProductID, prod.ProductName);
             }
         }
-        public static void exerciseJ()
+        public static void exercise_J()
         {
             //creacion de la consulta
             var query = from p in context.Products
@@ -41,7 +41,7 @@ namespace lab10
                 Console.WriteLine("ID={0} \t Price={1} \t Name={2}", prod.ProductID, prod.UnitPrice, prod.ProductName);
             }
         }
-        public static void exerciseK_i()
+        public static void exercise_K_I()
         {
             var query = from p in context.Products
                         where p.ProductName.Contains("Queso")
@@ -52,7 +52,7 @@ namespace lab10
                 Console.WriteLine("ID={0} \t Product Name={1}", prod.ProductID,prod.ProductName);            
             }
         }
-        public static void exerciseK_I_I()
+        public static void exercise_K_II()
         {
             var query = from p in context.Products
                         where p.QuantityPerUnit.Contains("pkg") || p.QuantityPerUnit.Contains("pkgs")
@@ -62,7 +62,7 @@ namespace lab10
                 Console.WriteLine("ID={0} \t Product Name={1}", prod.ProductID, prod.ProductName);
             }
         }
-        public static void exerciseK_I_I_I()
+        public static void exercise_K_III()
         {
             var query = from p in context.Products
                         where SqlMethods.Like(p.ProductName, "A%")
@@ -72,7 +72,7 @@ namespace lab10
                 Console.WriteLine("Product Name={0}",prod.ProductName);
             }
         }
-        public static void exerciseK_IV()
+        public static void exercise_K_IV()
         {
             var query = from p in context.Products
                         where p.UnitsInStock == 0
