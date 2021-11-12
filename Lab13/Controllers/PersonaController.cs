@@ -81,8 +81,16 @@ namespace Lab13.Controllers
                                select p).FirstOrDefault();
             return View(persona);
         }
-        public void llenarData()
+        public ActionResult Buscador()
         {
+            return View();
+        }
+        
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Filter(Persona persona)
+        {
+            List<Persona> personas = new List<Persona>();
             personas.Add(new Persona
             {
                 PersonaID = 1,
@@ -95,7 +103,7 @@ namespace Lab13.Controllers
             personas.Add(new Persona
             {
                 PersonaID = 2,
-                Nombre = "Maria",
+                Nombre = "Juan",
                 Apellido = "Salas",
                 Direccion = "AV. Progreso 325",
                 FechaNac = Convert.ToDateTime("1995-10-28"),
@@ -110,6 +118,11 @@ namespace Lab13.Controllers
                 FechaNac = Convert.ToDateTime("1982-02-14"),
                 Email = "carlos@gmail.com"
             });
+
+            var persons = (from p in personas
+                               where p.Nombre == persona.Nombre || p.Apellido == persona.Apellido
+                               select p).ToList();
+            return View(persons);
         }
     }
 }

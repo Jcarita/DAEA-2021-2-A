@@ -153,6 +153,8 @@
     <Content Include="Scripts\bootstrap.bundle.min.js.map" />
     <Content Include="Scripts\bootstrap.bundle.js.map" />
     <Content Include="Views\Persona\Mostrar.cshtml" />
+    <Content Include="Views\Persona\Buscador.cshtml" />
+    <Content Include="Views\Persona\Filter.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -1,0 +1,28 @@
+﻿@model IEnumerable<Lab13.Models.Persona>
+@{
+    ViewBag.Title = "Filter";
+}
+
+<h2>Filter</h2>
+<table class="table table-striped">
+    <tr>
+        <th>PersonID</th>
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th>Fecha de Nac</th>
+        <th>Direccion</th>
+        <th>Email</th>
+    </tr>
+    @foreach (var person in Model)
+    {
+        <tr>
+            <td>@person.PersonaID</td>
+            <td>@person.Nombre</td>
+            <td>@person.Apellido</td>
+            <td>@person.FechaNac</td>
+            <td>@person.Direccion</td>
+            <td>@person.Email</td>
+        </tr>
+    }
+</table>
+
