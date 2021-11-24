@@ -123,6 +123,7 @@ namespace Lab14.Controllers
                     contexto.Categories.Remove(categoriaEliminar);
                     contexto.SaveChanges();
                     return RedirectToAction("Index");
+                    
                 }
                 return View(categoriaEliminar);
             }
@@ -133,7 +134,7 @@ namespace Lab14.Controllers
         }
         public ActionResult ShowProductEdit(int? id)
         {
-            return RedirectToAction("Edit","Product", new { id = id});
+            return RedirectToAction("Edit","Product", new { id = id });
         }
         public ActionResult ShowProductDetails (int? id)
         {

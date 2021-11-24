@@ -1,0 +1,106 @@
+﻿@model Lab14.Models.Product
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Desea eliminar producto?</h2>
+
+
+@using (Html.BeginForm())
+{
+    <div class="shadow">
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                @Html.DisplayNameFor(model => model.ProductID)
+            </div>
+            <div class="form-group col-md-6">
+                @Html.DisplayFor(model => model.ProductID)
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                @Html.DisplayNameFor(model => model.ProductName)
+            </div>
+            <div class="form-control col-md-6">
+                @Html.DisplayFor(model => model.ProductName)
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                @Html.DisplayNameFor(model => model.SupplierID)
+            </div>
+            <div class="form-group col-md-6">
+                @Html.DisplayFor(model => model.SupplierID)
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                @Html.DisplayNameFor(model => model.CategoryID)
+            </div>
+            <div class="form-group col-md-6">
+                @Html.DisplayFor(model => model.CategoryID)
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                @Html.DisplayNameFor(model => model.QuantityPerUnit)
+            </div>
+
+            <div class="form-group col-md-6">
+                @Html.DisplayFor(model => model.QuantityPerUnit)
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                @Html.DisplayNameFor(model => model.UnitPrice)
+            </div>
+            <div class="form-group col-md-6">
+                @Html.DisplayFor(model => model.UnitPrice)
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                @Html.DisplayNameFor(model => model.UnitsInStock)
+            </div>
+            <div class="form-group col-md-6">
+                @Html.DisplayFor(model => model.UnitsInStock)
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                @Html.DisplayNameFor(model => model.UnitsOnOrder)
+            </div>
+            <div class="form-group col-md-6">
+                @Html.DisplayFor(model => model.UnitsOnOrder)
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                @Html.DisplayNameFor(model => model.ReorderLevel)
+            </div>
+            <div class="form-group col-md-6">
+                @Html.DisplayFor(model => model.ReorderLevel)
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                @Html.DisplayNameFor(model => model.Discontinued)
+            </div>
+            <div class="form-group col-md-6">
+                @Html.DisplayFor(model => model.Discontinued)
+            </div>
+        </div>
+    </div>
+    <p>
+        <input type="submit" class="btn btn-primary" value="Delete" />
+        @Html.ActionLink("Retornar a Index", "Index", "Categories")
+    </p>
+}
